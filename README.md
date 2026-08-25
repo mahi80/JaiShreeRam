@@ -48,14 +48,24 @@ working until renewed. To **renew or move to a new laptop**, email
 
 Enter these in the app's **Keys** tab, then click **Check keys and models**.
 
-| Provider | Used for | Cost | Get a key |
+| Provider | Used for | Do you need it? | Get a key |
 |---|---|---|---|
-| **Groq** | speech‑to‑text + fast answers | **Free tier** | https://console.groq.com/keys |
-| **Anthropic (Claude)** | best answers + screen solving | pay‑as‑you‑go | https://console.anthropic.com/settings/keys |
-| **OpenAI** | fast screenshot answers (optional) | pay‑as‑you‑go | https://platform.openai.com/api-keys |
+| **Groq** | speech‑to‑text, and the fastest answers | **Required** — free tier | https://console.groq.com/keys |
+| **Anthropic (Claude)** | the best answers; all coding and screen solving | **Strongly recommended** — pay‑as‑you‑go | https://console.anthropic.com/settings/keys |
+| **OpenAI** | a fallback so screenshots work without Claude | **Optional** — pay‑as‑you‑go | https://platform.openai.com/api-keys |
 
-Groq alone is enough to start. Add Claude for the best answers and screenshot
-solving.
+**Groq is the one you cannot skip.** It is the only speech‑to‑text, so without
+it nothing is transcribed and nothing gets answered.
+
+**Add Claude next.** It writes the best answers, and coding and screenshot
+questions always go to Claude because being right matters more there than being
+quick. The tested-code feature described below only works with a Claude key.
+
+**OpenAI is optional, and most people do not need it.** It exists as a fallback:
+with a Groq key alone, *spoken* questions are answered but **screenshots are
+not**, because Groq has no model that can see images — an OpenAI key fills that
+gap. If you already have Claude, an OpenAI key only buys a faster screenshot
+answer on the *Fastest* setting.
 
 **Saving a key:** paste it in and click **Save**. The field clears itself on
 purpose — a key sitting in a text box is a key waiting to be leaked — and the
