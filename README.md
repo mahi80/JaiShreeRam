@@ -27,7 +27,7 @@ the app does not restart it. It needs an internet connection to begin.
 
 ## 1. Download & install
 
-1. Download **`JaiShreeRam-Setup-0.1.3.exe`** from the
+1. Download **`JaiShreeRam-Setup-0.1.4.exe`** from the
    [Releases](https://github.com/mahi80/JaiShreeRam/releases) page. That single
    `.exe` is the whole app — you do **not** need GitHub's auto-listed
    *Source code (zip/tar.gz)* files.
@@ -47,7 +47,7 @@ the app does not restart it. It needs an internet connection to begin.
 ## 2. Your free trial, then a licence
 
 **The trial starts by itself.** Launch the app and it runs for 10 days. The
-panel shows how many days are left. You need to be online the first time so it
+badge at the top right shows how many days are left. You need to be online the first time so it
 can start.
 
 When the trial ends:
@@ -148,6 +148,12 @@ will sit with for a few minutes. It is *not* the setting for keeping up with
 live conversation. Coding and screenshot questions always use a strong Claude
 model regardless of this setting, because being right matters more there than
 being quick.
+
+## What's new in 0.1.4
+
+- **The panel now shows your free trial and the days remaining.** It previously
+  just said *licensed*, which looked the same as a paid licence — so there was
+  no way to tell a clock was running.
 
 ## What's new in 0.1.3
 
