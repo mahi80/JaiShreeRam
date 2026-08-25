@@ -166,44 +166,53 @@ live conversation. Coding and screenshot questions always use a strong Claude
 model regardless of this setting, because being right matters more there than
 being quick.
 
-## What's new in 0.1.4
+## What's new
 
-- **The panel now shows your free trial and the days remaining.** It previously
-  just said *licensed*, which looked the same as a paid licence — so there was
-  no way to tell a clock was running.
-
-## What's new in 0.1.3
-
-- **A new app icon**, drawn for the app rather than borrowed.
-- **The verify badge now tells you when it could *not* check an answer**, and
-  why — Python missing, a package missing, or a language it cannot run here.
-  Previously "could not check" looked exactly like "checked and passed".
-- Answers are steered toward a language your laptop can actually run, so
-  verification works out of the box instead of quietly skipping.
-- Fixed: a blocked or missing interpreter showed a red "tests failed" over
-  perfectly correct code.
-
-## What's new in 0.1.2
-
-- **A 10-day free trial**, so you can try the whole app before paying. It starts
-  on its own, needs no key, and shows the days remaining in the panel.
-
-## What's new in 0.1.1
+Everything below arrived since 0.1.0. If you are upgrading from that first
+release, this is all of it in one place.
 
 - **Coding answers are checked by actually running them.** When the app writes
   code, it runs that code against its own test cases on your laptop and shows a
   badge on the phone — *running tests…*, then *✓ tests passed*. If the tests
-  fail it rewrites the code and tries again, and only shows you a fix that then
-  passed. A green badge means the code really ran, not that the AI thinks it
-  works.
+  fail it rewrites the code and tries again, and only ever shows you a fix that
+  then passed. A green badge means the code really ran, not that the AI thinks
+  it works.
+- **The badge also tells you when it could *not* check an answer**, and why —
+  Python missing, a package missing, or a language it cannot run here.
+  Previously "could not check" looked exactly like "checked and passed", which
+  was the wrong way round on the one feature where knowing the difference is
+  the entire point.
+- **A 10-day free trial.** It starts on its own, needs no licence key, and the
+  badge at the top right counts down the days. (The trial covers the app, not
+  the AI — see the note near the top about bringing your own keys.)
 - **Voice ask** replaces the old *Phone mic* button — tap, speak, tap to send.
+  It uses the phone's microphone, which matters because Teams and Zoom take
+  exclusive hold of the laptop's.
 - **Questions are recognised by type** — coding, system design, behavioural,
-  factual — and the answer is shaped to match, with the type labelled on the
+  factual — and each answer is shaped to match, with the type labelled on the
   phone.
-- **Most accurate** answer setting (see above).
-- Many fixes, including one where the app could stop answering after you stopped
-  and restarted a session, and one where a wrong system clock could lock you out
-  of a valid licence.
+- **A "Most accurate" answer setting**, for a screenshotted problem you will sit
+  with for a few minutes. Best answer available, and clearly the slowest.
+- Answers are steered toward a language your laptop can actually run, so
+  verification works out of the box instead of quietly skipping.
+
+### Fixes worth knowing about
+
+- The app could **silently stop answering** for the rest of a session if you
+  pressed Stop while an answer was still being written, then pressed Start
+  again. Captions kept scrolling, so it looked like it was working.
+- A **wrong system clock could lock you out of a valid licence**, and entering a
+  fresh key did not recover it.
+- A blocked or missing interpreter showed a red **"tests failed"** over
+  perfectly correct code.
+- Clicking **Save** on an empty API-key field used to delete the stored key.
+- A licence problem could pop the laptop window in front of whoever you were
+  sharing your screen with.
+- Answers cut off at the length limit are now marked as incomplete instead of
+  looking finished, and a mid-answer Wi-Fi drop is marked as interrupted rather
+  than silently missing its middle.
+- The pairing code no longer points at the wrong address after you switch Wi-Fi
+  networks.
 
 ### Optional: install Python
 
