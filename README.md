@@ -16,6 +16,19 @@ to email. When the trial ends the app tells you your Machine ID; email that to
 The trial runs once per machine and is tracked on our server, so reinstalling
 the app does not restart it. It needs an internet connection to begin.
 
+> ### ⚠️ The trial does NOT include AI keys — you must add your own
+>
+> **The free trial unlocks the app. It does not pay for the AI.** JaiShreeRam
+> runs on *your* provider accounts, so until you paste your own keys into the
+> **Keys** tab, the app will start a session, sit there, and answer nothing.
+>
+> **At minimum you need a free [Groq](https://console.groq.com/keys) key** — it
+> is the only speech-to-text, so without it nothing is transcribed and nothing
+> gets answered. See [step 3](#3-get-your-api-keys-bring-your-own).
+>
+> The Status panel tells you where you stand: **`Keys: anthropic: not set ·
+> groq: not set · openai: not set`** means the app cannot answer yet.
+
 ---
 
 ## Requirements
@@ -122,6 +135,10 @@ and if the phone still won't connect, restart the app.
    - **Laptop screen** — capture the laptop screen and solve what's on it.
    - **Voice ask** — tap once to start listening on the *phone's* microphone,
      speak your question, then tap again to send it.
+
+**If nothing is transcribed and no answers appear, check your keys first.**
+A session with no Groq key starts normally and then does nothing at all — it is
+by far the most common cause of "it isn't working".
 
 **Which channels to tick:** **System audio** is the important one — it captures
 the other person through the call. The laptop **Microphone** is optional and is
