@@ -166,7 +166,7 @@ live conversation. Coding and screenshot questions always use a strong Claude
 model regardless of this setting, because being right matters more there than
 being quick.
 
-## What's new
+## What's new in 0.1.4
 
 Everything below arrived since 0.1.0. If you are upgrading from that first
 release, this is all of it in one place.
