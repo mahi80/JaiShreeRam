@@ -7,16 +7,27 @@ You bring your own AI keys; the phone needs no internet.
 
 ---
 
+## Try it free for 10 days
+
+Install it and it just works for **10 days** — no licence key, no card, nothing
+to email. When the trial ends the app tells you your Machine ID; email that to
+**kmsb80@gmail.com** for a licence key (**₹3000 / year**).
+
+The trial runs once per machine and is tracked on our server, so reinstalling
+the app does not restart it. It needs an internet connection to begin.
+
+---
+
 ## Requirements
 
 - A **Windows 11** laptop.
 - A **phone** (Android or iPhone) on the **same Wi‑Fi** as the laptop.
 - Your own **API keys** (one is free — see step 3).
-- A **licence key** — ₹3000 / year, one machine per key (see step 2).
+- After the free trial, a **licence key** — ₹3000 / year, one machine per key.
 
 ## 1. Download & install
 
-1. Download **`JaiShreeRam-Setup-0.1.1.exe`** from the
+1. Download **`JaiShreeRam-Setup-0.1.2.exe`** from the
    [Releases](https://github.com/mahi80/JaiShreeRam/releases) page. That single
    `.exe` is the whole app — you do **not** need GitHub's auto-listed
    *Source code (zip/tar.gz)* files.
@@ -28,14 +39,20 @@ You bring your own AI keys; the phone needs no internet.
    anyway**.
 3. It installs per‑user (no admin needed) and adds a Start‑menu shortcut.
 
-> **Already on 0.1.0?** Please update. 0.1.0 calls an AI model that has since
-> been retired, so its faster answers now fail, and it has a licensing bug that
-> can lock you out. Just install 0.1.1 over it — your keys and licence carry
-> over.
+> **Already on 0.1.0 or 0.1.1?** Please update. 0.1.0 in particular calls an AI
+> model that has since been retired, so its faster answers now fail, and it has
+> a licensing bug that can lock you out. Install the new version straight over
+> the old one — your keys and licence carry across.
 
-## 2. Activate your licence
+## 2. Your free trial, then a licence
 
-1. On first launch the app shows your **Machine ID**.
+**The trial starts by itself.** Launch the app and it runs for 10 days. The
+panel shows how many days are left. You need to be online the first time so it
+can start.
+
+When the trial ends:
+
+1. The app shows your **Machine ID**.
 2. Email that Machine ID to **kmsb80@gmail.com** to buy a licence key
    (**₹3000 / year**). Each key activates **one machine**.
 3. Paste the key into the activation screen and click **Activate**.
@@ -131,6 +148,11 @@ will sit with for a few minutes. It is *not* the setting for keeping up with
 live conversation. Coding and screenshot questions always use a strong Claude
 model regardless of this setting, because being right matters more there than
 being quick.
+
+## What's new in 0.1.2
+
+- **A 10-day free trial**, so you can try the whole app before paying. It starts
+  on its own, needs no key, and shows the days remaining in the panel.
 
 ## What's new in 0.1.1
 
