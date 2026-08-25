@@ -27,7 +27,7 @@ the app does not restart it. It needs an internet connection to begin.
 
 ## 1. Download & install
 
-1. Download **`JaiShreeRam-Setup-0.1.2.exe`** from the
+1. Download **`JaiShreeRam-Setup-0.1.3.exe`** from the
    [Releases](https://github.com/mahi80/JaiShreeRam/releases) page. That single
    `.exe` is the whole app — you do **not** need GitHub's auto-listed
    *Source code (zip/tar.gz)* files.
@@ -39,7 +39,7 @@ the app does not restart it. It needs an internet connection to begin.
    anyway**.
 3. It installs per‑user (no admin needed) and adds a Start‑menu shortcut.
 
-> **Already on 0.1.0 or 0.1.1?** Please update. 0.1.0 in particular calls an AI
+> **Already on an older version?** Please update. 0.1.0 in particular calls an AI
 > model that has since been retired, so its faster answers now fail, and it has
 > a licensing bug that can lock you out. Install the new version straight over
 > the old one — your keys and licence carry across.
@@ -149,6 +149,17 @@ live conversation. Coding and screenshot questions always use a strong Claude
 model regardless of this setting, because being right matters more there than
 being quick.
 
+## What's new in 0.1.3
+
+- **A new app icon**, drawn for the app rather than borrowed.
+- **The verify badge now tells you when it could *not* check an answer**, and
+  why — Python missing, a package missing, or a language it cannot run here.
+  Previously "could not check" looked exactly like "checked and passed".
+- Answers are steered toward a language your laptop can actually run, so
+  verification works out of the box instead of quietly skipping.
+- Fixed: a blocked or missing interpreter showed a red "tests failed" over
+  perfectly correct code.
+
 ## What's new in 0.1.2
 
 - **A 10-day free trial**, so you can try the whole app before paying. It starts
@@ -170,6 +181,21 @@ being quick.
 - Many fixes, including one where the app could stop answering after you stopped
   and restarted a session, and one where a wrong system clock could lock you out
   of a valid licence.
+
+### Optional: install Python
+
+JavaScript answers are checked automatically — the app carries everything it
+needs. **Python answers are only checked if Python is installed on your laptop.**
+Without it you still get the answer, and the badge simply says *not verified*
+rather than pretending.
+
+If your interviews are Python-based and you want that checking, install Python
+from **https://www.python.org/downloads/** (tick *Add python.exe to PATH* during
+setup) and restart the app.
+
+You do **not** need to install any packages. Interview answers use only the
+standard library. If a particular answer does need a library, the badge names it
+— install it with `pip install <name>` if you want that answer checked too.
 
 ### About running generated code
 
