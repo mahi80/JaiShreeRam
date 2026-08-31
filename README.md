@@ -40,10 +40,28 @@ the app does not restart it. It needs an internet connection to begin.
 
 ## 1. Download & install
 
-1. Download **`JaiShreeRam-Setup-0.1.4.exe`** from the
-   [Releases](https://github.com/mahi80/JaiShreeRam/releases) page. That single
-   `.exe` is the whole app — you do **not** need GitHub's auto-listed
-   *Source code (zip/tar.gz)* files.
+Pick your platform from the
+[Releases](https://github.com/mahi80/JaiShreeRam/releases) page — each file is
+the whole app; you do **not** need GitHub's auto-listed *Source code
+(zip/tar.gz)* files.
+
+| Platform | File | Status |
+|---|---|---|
+| Windows 10/11 | `JaiShreeRam-Setup-0.1.4.exe` | **Supported** — everything works |
+| Ubuntu / Linux (x64) | `JaiShreeRam-0.1.4.AppImage` or `JaiShreeRam-0.1.4.deb` | Experimental |
+| macOS | — | Not yet available |
+
+**What "experimental" means on Linux, concretely:** system-audio capture is a
+Windows-only Electron capability, so the app cannot hear the *other side* of a
+call on Linux — the **System audio** channel will not deliver anything. Your
+microphone works, so **Practice mode** (your own voice triggers answers) and
+the phone-mic channel are the usable paths. Two more Linux notes: the `.deb`
+installs its dependencies via `apt`; the AppImage assumes a normal desktop
+(`libfuse2` on older distros). API keys need a keyring (gnome-keyring /
+libsecret) — without one the app refuses to store keys rather than writing
+them in plain text.
+
+1. On Windows, download **`JaiShreeRam-Setup-0.1.4.exe`**.
 2. The app is not yet code-signed, so your browser or Windows may show a
    reputation warning on a new download (Chrome may say "virus detected",
    Windows shows SmartScreen). This is a *reputation* warning for a new,
