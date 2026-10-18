@@ -11,7 +11,7 @@ You bring your own AI keys; the phone needs no internet.
 
 Install it and it just works for **10 days** — no licence key, no card, nothing
 to email. When the trial ends the app tells you your Machine ID; email that to
-**kmsb80@gmail.com** for a licence key (**₹3000 / year**).
+**kmsb80@gmail.com** for a licence key (**₹3000 **).
 
 The trial runs once per machine and is tracked on our server, so reinstalling
 the app does not restart it. It needs an internet connection to begin.
